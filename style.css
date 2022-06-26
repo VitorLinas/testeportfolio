@@ -450,6 +450,8 @@ footer img{
 
    @media (max-width: 500px){
 
+  
+
 
     #menu img{
         width: 30px;
@@ -458,16 +460,15 @@ footer img{
     
 
     header{
-        /* height: calc(145vh - 750px);  */
-        height: 220px;
+        height: 260px;
     }
 
     #principal h1{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .botões-de-acesso{
-        font-size: 13px;
+        font-size: 15px;
         padding: 5px;
     }
 
