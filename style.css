@@ -94,22 +94,6 @@ header{
     top:30px;
 }
 
-.btnMobile{
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 36px;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    display: none;
-}
-
-
-
-
-
 
 #principal{
     font-size: 30px;
@@ -436,12 +420,11 @@ footer img{
 
     @media (max-width:900px){
 
+     
+
         .ul-menu{
             display: none;
-        }
 
-        .btnMobile{
-            display: flex;
         }
 
         #principal{
@@ -467,6 +450,7 @@ footer img{
 
    @media (max-width: 500px){
 
+
     #menu img{
         width: 30px;
         margin-left: -20px;
@@ -487,9 +471,6 @@ footer img{
         padding: 5px;
     }
 
-    .btnMobile{
-        font-size: 28px;
-    }
    }
 }
 

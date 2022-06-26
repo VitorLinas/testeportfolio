@@ -27,8 +27,7 @@ function enviar(){
 
 
 
-document.querySelector(".hamburguer").addEventListener("click", () =>
-document.querySelector(".hamburguerContainer").classList.toggle("show-menu"));
+
 
 
 
