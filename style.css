@@ -1,0 +1,595 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+#seta{
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+    padding: 10px;
+    background-color: rgb(35, 34, 34);
+    opacity: 0.4;
+    margin-top: -25px;
+    margin-left: 95%;
+}
+#seta:hover{
+    background-color: rgb(73, 72, 72);
+    opacity:unset;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(23, 22, 22);
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(54, 53, 53);
+    border-radius: 5px;
+}
+
+/* INÍCIO */
+
+body{
+    margin: 0;
+    width: 100vw;
+    background-color: rgb(11, 11, 11);
+    color: white;
+}
+
+header{
+    height: calc(100vh - 35px); /*ou 5px*/
+    background: no-repeat center/ cover url(imagens/background_image.jpg); 
+} 
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+.ul-menu{
+    list-style: none;
+    display: flex;
+}
+
+.li-menu{
+    margin: 0 30px;
+    font-size: 20px;
+    margin-left: 70px;
+    position: static;
+}
+
+.a-menu{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.a-menu::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.a-menu:hover::before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+
+    top:30px;
+}
+
+.btnMobile{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+
+
+
+
+
+#principal{
+    font-size: 30px;
+    margin: 250px auto;
+    text-align: center;
+}
+
+#principal h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-decoration: overline;
+    font-style: italic;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
+.botões-de-acesso{
+    font-size: 25px;
+    border:  2px solid white;
+    border-radius: 80px;
+    color: white;
+    background: none;
+    cursor: pointer;
+}
+
+.botões-de-acesso:hover{
+    background-color: white;
+    color: black;
+    transition:  width ,2s;
+}
+
+
+
+/* SOBRE MIM */
+
+#sobre-mim{
+    padding: 40px;
+    text-align: center;
+}
+
+#sobre-mim img{
+    width: 21.875rem;
+}
+
+#texto-SobreMim{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    max-width: 40%;
+    /* max-width: 60%; */
+    margin-left: 40px;
+
+    
+}
+
+#texto-SobreMim p, #texto-SobreMim h1{
+    margin-bottom: 30px;
+}
+
+#texto-SobreMim h1{
+    font-size: 50px;
+}
+
+#texto-SobreMim p{
+    font-size: 30px;
+}
+
+
+/* EXPERIÊNCIA */
+
+#experiência{
+    padding: 40px;
+    background-color: rgb(18, 18, 18);
+    /* justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    z-index: 1; */
+}
+
+#experiência #cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* tirar o display flex na responsividade */
+}
+
+#experiência h1{
+    font-size: 50px; 
+    text-align: center;
+ }
+
+ #experiência #cards .card{
+    /* width: 23.75rem;
+    height: 31.25rem; */
+    
+    width: 380px;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#experiência #cards .card  .item-card{
+    padding: 20px;
+    text-align: center;
+    
+}
+
+#experiência #cards .card .item-card h3{
+    font-size: 1.8em;
+    z-index: 1;
+}
+
+#experiência #cards .card .item-card p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+/* PROJETOS */
+
+#projetos{
+    padding: 40px;
+    text-align: center;
+}
+
+#projetos h1{
+    font-size: 50px;
+}
+
+#projetos a{
+    color: white;
+    text-decoration: none;
+}
+
+#projetos a:hover{
+    color:darkslateblue;
+    text-decoration: none;
+}
+
+.colunaDeProjetos{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagemProjetos{
+    border-radius: 30px;
+    border: 3px solid darkgray;
+}
+
+.imagemProjetos:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.5;
+    
+    
+}
+
+
+
+/*CONTATO*/
+
+#contato{
+    padding: 100px;
+    text-align: center;
+    background-color: rgb(18, 18, 18);
+}
+
+#contato h1{
+    font-size: 30px;
+}
+
+form input, textarea{
+    width: 50%;
+    margin: auto;
+    display: block;
+    color: white; 
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    margin-top: 7%;
+
+    font-size: 20px;
+}
+
+form button{
+    margin-top: 4%;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 6px;
+    width: 8%;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: white;
+    color: black;
+    transition:  width ,2s;
+}
+
+::placeholder{
+    color: white;
+    font-size: 1.125rem;
+}
+
+
+/* RODAPÉ */
+
+footer hr, h4{
+    text-align: center;
+    color: darkgray;
+    border-color: darkgray;
+}
+
+footer img{
+    width: 20px;
+    margin-bottom: -5px; 
+}
+
+
+
+/* RESPONSIVIDADE */
+
+
+/* Responsividade header */
+
+@media (max-width: 1250px){
+    header{
+        height: calc(90vh - 200px); 
+    }
+
+    #principal h1{
+        font-size: 3rem;
+        margin-top: -90px;
+    }
+
+    #menu a{
+        
+        font-size: 20px;
+    }
+
+    #menu img{
+        width: 60px;
+    }
+}
+
+@media (max-width: 1035px){
+
+    /* #menu{
+        background-color: black;
+        margin: 0;
+    } */
+
+    header{
+        height: calc(90vh - 250px); 
+    }
+  
+    #principal h1{
+        font-size: 2.8rem;
+    }
+
+    .botões-de-acesso{
+        font-size: 22px;
+    }
+
+    #menu{
+        margin-right: 5%;
+        
+    }
+
+    #menu a{
+        font-size: 20px;
+    }
+
+    #menu li{
+        margin: auto 20px;
+        font-size: 12px;
+    }
+
+    #menu img{
+        width: 50px;
+    }
+
+
+    @media (max-width:900px){
+
+        .ul-menu{
+            display: none;
+        }
+
+        .btnMobile{
+            display: flex;
+        }
+
+        #principal{
+            margin-top: 150px;
+        }
+
+        #principal h1{
+            font-size: 1.5rem;
+        }
+
+        .botões-de-acesso{
+            font-size: 18px;
+        }
+
+        header{
+            height: calc(98vh - 550px); 
+        }
+
+        #menu img{
+            width: 40px;
+        }
+   }
+
+   @media (max-width: 500px){
+
+    #menu img{
+        width: 30px;
+        margin-left: -20px;
+    }
+    
+
+    header{
+        /* height: calc(145vh - 750px);  */
+        height: 220px;
+    }
+
+    #principal h1{
+        font-size: 1.1rem;
+    }
+
+    .botões-de-acesso{
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .btnMobile{
+        font-size: 28px;
+    }
+   }
+}
+
+
+
+
+
+/* Responsividade sobre-mim */
+
+@media (max-width: 1600px){
+    
+    #texto-SobreMim{
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 1300px){
+
+    #texto-SobreMim{
+        max-width: 60%;
+    }
+}
+
+@media(max-width:1100px){
+
+    #sobre-mim p{
+        font-size: 30px;
+    }
+
+    #sobre-mim h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:1068px){
+
+    #sobre-mim img{
+        height: 400px;
+    }
+    
+    #texto-SobreMim{
+        text-align: center;
+    }
+
+    #sobre-mim p {
+        font-size: 25px;
+        max-width: 100%;
+    }
+
+    #sobre-mim h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px){
+
+    #texto-SobreMim {
+        min-width: 90%;
+    }
+    #texto-SobreMim p{
+        font-size:20px ;
+    }
+
+    #texto-SobreMim h1{
+        font-size:25px ;
+    }
+
+    #sobre-mim img{
+        width: 15rem;
+        height: 250px;
+    }
+}
+
+@media (max-width:500px){
+
+    #sobre-mim img{
+        width: 9rem;
+        height: 170px;
+        margin: auto;
+    }
+
+    #texto-SobreMim{
+        min-width: 100%;
+        margin-left: 10px;
+        
+    }
+
+    #texto-SobreMim p{
+        font-size: 17px;
+    }
+
+    #texto-SobreMim h1{
+        font-size: 20px;
+    }
+
+    #texto-SobreMim p, #texto-SobreMim h1{
+        margin-bottom: 0px;
+    }
+}
+
+
+

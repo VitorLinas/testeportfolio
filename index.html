@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/SloganPortfólio.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio / Vitor Linas</title>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="imagens/SloganPortfólio.png" alt="slogan" width="70px">
+
+            <button class="btnMobile">&#9776;</button>
+           
+            <ul class="ul-menu">
+                <li class="li-menu">
+                    <a href="#sobre-mim" class="a-menu">SOBRE MIM</a>
+                </li>
+
+                <li class="li-menu">
+                    <a href="#experiência" class="a-menu">EXPERIÊNCIA</a>
+                </li>
+
+                <li class="li-menu">
+                    <a href="#projetos" class="a-menu">PROJETOS</a>
+                </li>
+
+                <li class="li-menu">
+                    <a href="#contato" class="a-menu">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+
+        <main id="principal">
+            <h1>VITOR LINAS / DESENVOLVEDOR WEB</h1>
+            <a href=""><input type="button" value="LINKEDIN" class="botões-de-acesso"></a>
+            <a href=""><input type="button" value="GITHUB" class="botões-de-acesso"></a>
+        </main>
+    </header>
+
+    
+    <a href=""><input type="image" src="imagens/seta.SVG" id="seta"></a >
+
+    <section id="sobre-mim">
+        <img src="imagens/imagem ilustrativa - sobre mim.jpeg" alt="foto">
+        <div id="texto-SobreMim">
+            <h1>Sobre mim</h1>
+        <p>Meu nome e Vitor Linas, sou estudante de desenvolvimento web
+           e futuramente almejo me tornar um desenvolvedor full stack.</p>
+          <p> Sempre tive interesse para assuntos como criação de sites, jogos
+           e desenvolvimento de sistemas, mas foi só durante a pandemia que
+           conheci a programação e comecei a focar nos estudos para aprender
+           e me aperfeiçoar.</p>
+        <p>Contagem, MG</p>
+        </div>
+    </section>
+
+
+    <section id="experiência">
+        <h1>Experiência</h1>
+        <div id="cards">
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon js.svg" alt="icone javascript" width="100px">
+                    <h3>JavaScript</h3>
+                    <p>O Javascript é uma linguagem de programação responsável pela parte lógica e interativa de um site ou página.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon html.svg" alt="icone html" width="100px">
+                    <h3>HTML</h3>
+                    <p>O HTML é uma lingagem de marcação, ele é responsável pela estrutura do site.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon css.svg" alt="icone css" width="100px">
+                    <h3>CSS</h3>
+                    <p>O CSS é uma linguagem de estilização, ele é responsável pelo estilo e toda estética do site.</p>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+
+    <!-- <section id="experiência">
+        <div id="cards">
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon js.svg" alt="icone javascript" width="100px">
+                    <h3>JavaScript</h3>
+                    <p>O Javascript é uma linguagem de programação responsável pela parte lógica e interativa de um site ou página.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon html.svg" alt="icone html" width="100px">
+                    <h3>HTML</h3>
+                    <p>O HTML é uma lingagem de marcação, ele é responsável pela estrutura do site.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="item-card">
+                    <img src="imagens/icon css.svg" alt="icone css" width="100px">
+                    <h3>CSS</h3>
+                    <p>O CSS é uma linguagem de estilização, ele é responsável pelo estilo e toda estética do site.</p>
+                </div>
+            </div>
+
+    </div>
+    </section> -->
+
+    <script type="text/javascript" src="efeitoCard.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25, speed:400, glare: true, "max-glare":1
+    });</script>
+
+
+    <section id="projetos">
+        <h1>Projetos</h1>
+        <div>
+          <ul  class="colunaDeProjetos">
+            <li>
+                <a href="https://vitorlinas.github.io/Projeto-PesquePagueDoZeVenancio/"><img src="imagens/pesquepague.jpg" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/Projeto-PesquePagueDoZeVenancio/"><h2>Pesque e pague do zé venâncio</h2></a>
+            </li>
+
+            <li>
+                <a href="https://vitorlinas.github.io/Churrascometro/"><img src="imagens/churrascometro.jpg" class="imagemProjetos" width="400" height="250"></a>
+                <a href="https://vitorlinas.github.io/Churrascometro/"><h2>Churrascômetro</h2></a>
+            </li> 
+
+            <li>
+                <a href=""><img src="imagens/AVISO - sendo feito.jpeg" class="imagemProjetos" width="400" height="250"></a>
+                <a href=""><h2>Projeto em desenvolvimento</h2></a>
+            </li>
+          </ul>
+
+          <ul  class="colunaDeProjetos">
+            <li>
+                <a href=""><img src="imagens/AVISO - sendo feito.jpeg" class="imagemProjetos" width="400" height="250"></a>
+                <a href=""><h2>Projeto em desenvolvimento</h2></a>
+            </li>
+
+            <li>
+                <a href=""><img src="imagens/AVISO - sendo feito.jpeg" class="imagemProjetos" width="400" height="250"></a>
+                <a href=""><h2>Projeto em desenvolvimento</h2></a>
+            </li> 
+
+            <li>
+                <a href=""><img src="imagens/AVISO - sendo feito.jpeg" class="imagemProjetos" width="400" height="250"></a>
+                <a href=""><h2>Projeto em desenvolvimento</h2></a>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <form action="https://api.staticforms.xyz/submit" method="post" id="red">
+            <h1>Entre em contato comigo:</h1>
+            <input type="hidden" name="accessKey" value="a8f4d546-9029-4cb8-b8b0-200be9f9b885" id="envio">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5502/index.html?#contato" >
+            <input type="text" placeholder="Nome" name="name" id="name">
+            <input type="text" placeholder="Email" name="email" id="email">
+            <input type="text" placeholder="Mensagem" name="message" id="message">
+            <button onclick="enviar()">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <h4><img src="imagens/iconEmail.SVG"> vitorlinas.dev@gmail.com</h4>
+        <h4><b>Desenvolvido por: </b>Vitor Gabriel Linas</h4>
+    </footer>
+    <script src="script.js"></script>
+
+   
+
+   
+    
+</body>
+</html> 
