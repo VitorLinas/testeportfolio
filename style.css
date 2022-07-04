@@ -421,15 +421,15 @@ footer img{
         width: 50px;
     }
 
+ 
+    @media (max-width:800px){
 
-    @media (max-width:900px){
-
-     
+        
 
         .ul-menu{
             display: none;
-
         }
+
 
         #principal{
             margin-top: 150px;
@@ -447,10 +447,10 @@ footer img{
             height: calc(98vh - 550px); 
         }
 
-        #menu img{
+        /* #menu img{
             width: 40px;
-        }
-   }
+        } */
+   } 
 
    @media (max-width: 500px){
 
@@ -469,8 +469,10 @@ footer img{
     }
 
     .botões-de-acesso{
-        font-size: 15px;
+        /* font-size: 15px; */
         padding: 5px;
+
+        font-size: 1.2rem;        
     }
 
    }
