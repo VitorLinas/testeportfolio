@@ -166,6 +166,8 @@ header{
 
 #sobre-mim img{
     width: 21.875rem;
+
+    border-radius: 20px;
 }
 
 #texto-SobreMim{
@@ -422,12 +424,14 @@ footer img{
     }
 
  
-    @media (max-width:800px){
+    @media (max-width:900px){
 
-        
 
         .ul-menu{
+            /* background-color: darkgrey;
+            flex-direction: column; */
             display: none;
+           
         }
 
 
@@ -561,7 +565,8 @@ footer img{
     #texto-SobreMim{
         min-width: 100%;
         margin-left: 10px;
-        
+
+        margin-left: -9px;
     }
 
     #texto-SobreMim p{
@@ -582,6 +587,50 @@ footer img{
 /* Responsividade experiência */
 
 @media(max-width:1100px){
-    #experiência{ 
-        background-color: aqua;}
+    #experiência #cards{ 
+        /* background-color: aqua; */
+        /* display: block; */
+    }
+
+    #cards{
+        display: block;
+        flex-direction: column;
+    }
+
+    /* #experiência #cards .card{
+        width: 300px;
+    } */
+}
+
+@media(max-width:750px){
+    #experiência h1{
+        font-size: 30px;
+    }
+
+    #experiência #cards .card{
+        width: 300px;
+        height: 420px;
+    } 
+}
+
+
+@media(max-width:500px){
+    #experiência #cards .card{
+        width: 200px;
+        height: 320px;
+        font-size: 11px;
+
+        /* translate: none;
+        transform: none;
+        transition: none;
+        animation: none; */
+    }
+
+    .item-card p {
+        font-size: px;
+    }
+
+    .item-card img{
+        width: 70px;
+    }
 }
