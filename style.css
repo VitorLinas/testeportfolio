@@ -616,8 +616,8 @@ footer img{
 
 @media(max-width:500px){
     #experiência #cards .card{
-        width: 200px;
-        height: 320px;
+        width: 180px;
+        height: 250px;
         font-size: 11px;
 
         /* translate: none;
@@ -626,11 +626,18 @@ footer img{
         animation: none; */
     }
 
-    .item-card p {
-        font-size: px;
+
+    
+    #experiência #cards .card .item-card p{
+        font-size: 13px;
     }
 
-    .item-card img{
-        width: 70px;
+    #experiência #cards .card .item-card h3{
+        font-size: 1.8em;
+
+    }
+    
+    #experiência #cards .card .item-card img{
+       width: 4rem;
     }
 }
