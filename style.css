@@ -675,13 +675,10 @@ footer img{
 }
   @media(max-width: 1000px){
 
-    #projetos{
-        /* background-color: gold; */
-        margin: 10;
-    }
 
     .colunaDeProjetos img{
         width: 20rem;
+        margin-top: 30px;
      }
   }
 
@@ -699,6 +696,10 @@ footer img{
 
      .colunaDeProjetos h2{
         font-size: 1rem;
+     }
+
+     .colunaDeProjetos2{
+        margin-top: -45px;
      }
   }
 
