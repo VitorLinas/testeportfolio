@@ -677,6 +677,7 @@ footer img{
 
     #projetos{
         /* background-color: gold; */
+        margin: 10;
     }
 
     .colunaDeProjetos img{
@@ -687,16 +688,17 @@ footer img{
   @media(max-width: 500px){
     #projetos{
         /* background-color: burlywood; */
+        
     }
 
     .colunaDeProjetos img{
         /* display: inline-block; */
-        width: 10rem;
-        height: 9rem;
+        width: 14rem;
+        height: 12rem;
      }
 
      .colunaDeProjetos h2{
-        font-size: 0.7rem;
+        font-size: 1rem;
      }
   }
 
