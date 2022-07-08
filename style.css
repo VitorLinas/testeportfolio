@@ -641,3 +641,66 @@ footer img{
        width: 4rem;
     }
 }
+
+
+
+/* Responsividade projetos */
+
+/* @media(max-width: 1600px){
+    
+    .colunaDeProjetos img{
+       width: 20rem;
+    }
+} */
+
+@media(max-width: 1600px){
+    #projetos{
+        /* background-color: firebrick; */
+    }
+
+    #projetos h1{
+        font-size: 30px;
+    }
+
+    .colunaDeProjetos{
+        display:inline-block;
+    }
+
+    .colunaDeProjetos img{
+        /* width: 300px; */
+        /* grid-template: auto auto / auto auto; */
+    }
+
+
+}
+  @media(max-width: 1000px){
+
+    #projetos{
+        /* background-color: gold; */
+    }
+
+    .colunaDeProjetos img{
+        width: 20rem;
+     }
+  }
+
+  @media(max-width: 500px){
+    #projetos{
+        /* background-color: burlywood; */
+    }
+
+    .colunaDeProjetos img{
+        /* display: inline-block; */
+        width: 10rem;
+        height: 9rem;
+     }
+
+     .colunaDeProjetos h2{
+        font-size: 0.7rem;
+     }
+  }
+
+
+    /* DEIXAR 2 PROJETOS POR LINHA 
+     TENTAR FAZER ISSO COM O GRID APRENDIDO RECENTEMENTE*/
+
