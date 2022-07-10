@@ -646,12 +646,6 @@ footer img{
 
 /* Responsividade projetos */
 
-/* @media(max-width: 1600px){
-    
-    .colunaDeProjetos img{
-       width: 20rem;
-    }
-} */
 
 @media(max-width: 1600px){
     #projetos{
@@ -702,8 +696,85 @@ footer img{
         margin-top: -45px;
      }
   }
-
-
     /* DEIXAR 2 PROJETOS POR LINHA 
      TENTAR FAZER ISSO COM O GRID APRENDIDO RECENTEMENTE*/
 
+
+     /* Responsividade contato */
+
+     @media(max-width: 1200px){
+    
+
+        form input, textarea{
+ 
+            width: 70%;
+        }
+
+        form button{
+            width: 15%;
+        }
+     }
+
+     @media(max-width: 750px){
+     
+
+        #contato h1{
+            font-size: 25px;
+    }
+
+    form input, textarea{
+ 
+        width: 100%;
+    }
+
+    form button{
+        width: 25%;
+    }
+     }
+
+
+     @media(max-width: 550px){
+        #contato{
+            /* background-color: chocolate; */
+            padding: 50px;
+        }
+
+        #contato h1{
+            
+            font-size: 22px;
+            /* width: 150%; */
+            /* margin-left: -30%; */
+        }
+
+        form input, textarea{
+            width: 100%;
+            /* margin-left: -50px; */
+            font-size: 15px;
+
+            margin-top: 15%;
+         }
+
+         form button{
+            width: 45%;
+            font-size: 18px;
+            margin-top: 13%;
+        }
+
+        ::placeholder{
+            font-size: 17px;
+        }
+     }
+
+
+     /* Responsividade footer */
+
+     @media(max-width: 600px){
+        footer{
+            font-size: 11px;
+        }
+
+        footer img{
+            width: 13px;
+            margin-bottom: -4px;
+        }
+     }
