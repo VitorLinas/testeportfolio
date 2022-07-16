@@ -13,7 +13,6 @@ body{
 }
 
 #seta{
-    /* position: absolute; */
     position: fixed;
     border-radius: 50%;
     width: 50px;
@@ -23,8 +22,12 @@ body{
     opacity: 0.4;
     bottom: 20px;
     right: 20px;
-    
+
+    /* top: 610px; 
+    left: 310px; */
 }
+    
+
 #seta:hover{
     background-color: rgb(73, 72, 72);
     opacity:unset;
@@ -795,20 +798,12 @@ footer img{
     cursor: pointer;
 }
 
-/* #checkbox{
-    display: none;
-    /* opacity: 0; */
-
- 
-/* 
-input[type=checkbox]:checked ~ .ul-menu{
-    display: block;
-    margin: 10px;
-   } */
 @media (max-width: 900px){
 
     #menu{
         margin-top:5px;
+        /* width: 350px; */
+       
     }
 
    
@@ -823,7 +818,7 @@ input[type=checkbox]:checked ~ .ul-menu{
     }
 
     #checkbox .hamburger{
-        display: block;
+        display:block;
     }
         
     #checkbox{
@@ -835,26 +830,32 @@ input[type=checkbox]:checked ~ .ul-menu{
         padding: 5px;
         color: white;
         font-size: 16px;
-        /* background-color: lawngreen; */
         top: 42px;
         left: -45px;
-        /* white-space: nowrap; */
+   
         }
         
-
-
     .ul-menu{
         border-radius: 7px;
-        z-index: 1;
+        z-index:1 ;
         margin-top: -20px;
-        width: 130px;
+        width: 130px; /*180px TESTAR*/
         height: 215px;
         right: 0px;
         top: 20px;
         position: absolute;
         background-color:rgb(54, 53, 53);
+        /* max-width: 130px; */
         }
 
+        /* ARRUMAR ACIMA DE 900PX */
+
+        .ul-menu{
+            overflow:scroll;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
        
     }
 
+    
