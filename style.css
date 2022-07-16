@@ -13,6 +13,7 @@ body{
 }
 
 #seta{
+    /* position: absolute; */
     position: fixed;
     border-radius: 50%;
     width: 50px;
@@ -22,6 +23,7 @@ body{
     opacity: 0.4;
     bottom: 20px;
     right: 20px;
+    
 }
 #seta:hover{
     background-color: rgb(73, 72, 72);
@@ -805,48 +807,52 @@ input[type=checkbox]:checked ~ .ul-menu{
    } */
 @media (max-width: 900px){
 
-        .hamburger{
-            /* margin: 4px; */
-            display: block;
-            z-index: 2;
-        }
+    #menu{
+        margin-top:5px;
+    }
 
-        input[type=checkbox]:checked ~ .ul-menu{
-            display: block;
+   
+    .hamburger{
+        display: block;
+        z-index: 2;
+    }
+
+    input[type=checkbox]:checked ~ .ul-menu{
+        display: block;
           
-        }
+    }
 
-        #checkbox .hamburger{
-            display: block;
+    #checkbox .hamburger{
+        display: block;
+    }
+        
+    #checkbox{
+        display: none;
+    }
+
+    #menu .ul-menu .li-menu .a-menu{
+        margin: 0;
+        padding: 5px;
+        color: white;
+        font-size: 16px;
+        /* background-color: lawngreen; */
+        top: 42px;
+        left: -45px;
+        /* white-space: nowrap; */
         }
         
-        #checkbox{
-            display: none;
-        }
-
-        #menu .ul-menu .li-menu .a-menu{
-            margin: 0;
-            padding: 5px;
-            color: white;
-            font-size: 16px;
-            /* background-color: lawngreen; */
-            top: 35px;
-            left: -45px;
-            /* white-space: nowrap; */
-        }
-        
 
 
-        .ul-menu{
-            border-radius: 7px;
-            z-index: 1;
-            margin-top: -20px;
-            width: 130px;
-            height: 215px;
-            right: 0px;
-            top: 20px;
-            position: absolute;
-            background-color:rgb(54, 53, 53);
+    .ul-menu{
+        border-radius: 7px;
+        z-index: 1;
+        margin-top: -20px;
+        width: 130px;
+        height: 215px;
+        right: 0px;
+        top: 20px;
+        position: absolute;
+        background-color:rgb(54, 53, 53);
         }
 
        
