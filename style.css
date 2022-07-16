@@ -781,3 +781,74 @@ footer img{
      }
 
     
+
+
+
+
+
+
+
+#checkbox, .hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+/* #checkbox{
+    display: none;
+    /* opacity: 0; */
+
+ 
+/* 
+input[type=checkbox]:checked ~ .ul-menu{
+    display: block;
+    margin: 10px;
+   } */
+@media (max-width: 900px){
+
+        .hamburger{
+            /* margin: 4px; */
+            display: block;
+            z-index: 2;
+        }
+
+        input[type=checkbox]:checked ~ .ul-menu{
+            display: block;
+          
+        }
+
+        #checkbox .hamburger{
+            display: block;
+        }
+        
+        #checkbox{
+            display: none;
+        }
+
+        #menu .ul-menu .li-menu .a-menu{
+            margin: 0;
+            padding: 5px;
+            color: white;
+            font-size: 16px;
+            /* background-color: lawngreen; */
+            top: 35px;
+            left: -45px;
+            /* white-space: nowrap; */
+        }
+        
+
+
+        .ul-menu{
+            border-radius: 7px;
+            z-index: 1;
+            margin-top: -20px;
+            width: 130px;
+            height: 215px;
+            right: 0px;
+            top: 20px;
+            position: absolute;
+            background-color:rgb(54, 53, 53);
+        }
+
+       
+    }
+
