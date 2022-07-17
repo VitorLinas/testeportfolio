@@ -64,6 +64,15 @@ header{
     margin: auto 30px;
 }
 
+#checkbox, .hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+/* .hamburger img{
+    width: 0px;
+} */
+
 .ul-menu{
     list-style: none;
     display: flex;
@@ -387,17 +396,12 @@ footer img{
         font-size: 20px;
     }
 
-    #menu img{
+    #menu .slogan{
         width: 60px;
     }
 }
 
 @media (max-width: 1035px){
-
-    /* #menu{
-        background-color: black;
-        margin: 0;
-    } */
 
     header{
         height: calc(90vh - 250px); 
@@ -425,8 +429,12 @@ footer img{
         font-size: 12px;
     }
 
+    #menu .slogan {
+        width: 50px; 
+    }
+
     #menu img{
-        width: 50px;
+        width: 35px;
     }
 
  
@@ -457,15 +465,13 @@ footer img{
             height: calc(98vh - 550px); 
         }
 
-        /* #menu img{
-            width: 40px;
-        } */
+       
    } 
 
    @media (max-width: 500px){
 
-    #menu img{
-        width: 30px;
+    #menu .slogan{
+        width: 40px;
         margin-left: -20px;
     }
     
@@ -793,10 +799,10 @@ footer img{
 
 
 
-#checkbox, .hamburger{
+/* #checkbox, .hamburger{
     display: none;
     cursor: pointer;
-}
+} */
 
 @media (max-width: 900px){
 
@@ -854,6 +860,10 @@ footer img{
             overflow:scroll;
             overflow-y: hidden;
             overflow-x: hidden;
+        }
+
+        #menu img{
+            width: 30px;
         }
        
     }
