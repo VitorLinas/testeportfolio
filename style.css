@@ -69,9 +69,6 @@ header{
     cursor: pointer;
 }
 
-/* .hamburger img{
-    width: 0px;
-} */
 
 .ul-menu{
     list-style: none;
@@ -440,15 +437,6 @@ footer img{
  
     @media (max-width:900px){
 
-
-        .ul-menu{
-            /* background-color: darkgrey;
-            flex-direction: column; */
-            display: none;
-           
-        }
-
-
         #principal{
             margin-top: 150px;
         }
@@ -463,10 +451,64 @@ footer img{
 
         header{
             height: calc(98vh - 550px); 
-        }
+        } 
 
+        #menu img{
+            margin-top: 5px; 
+        }
+    
+        .hamburger{
+            display: block;
+            z-index: 2;
+        }
+    
+        input[type=checkbox]:checked ~ .ul-menu{
+            display: block;
+              
+        }
+            
+        #checkbox{
+            display: none;
+        }
+    
+        #menu .ul-menu .li-menu .a-menu{
+            margin: 0;
+            padding: 5px;
+            color: white;
+            font-size: 16px;
+            top: 42px;
+            left: -45px;
        
-   } 
+            }
+            
+        .ul-menu{
+            display: none;
+            border-radius: 7px;
+            z-index:1 ;
+            margin-top: -20px; 
+            width: 130px; 
+            height: 215px;
+            right: 0px;
+            top: 20px; 
+            position: absolute;
+            background-color:rgb(54, 53, 53);
+            overflow:scroll;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            }
+    
+    
+            #menu img{
+                width: 30px;
+            }
+    
+            .a-menu:hover::before{
+                visibility:hidden;
+                -webkit-transform: none;
+                transform: none;
+            }  
+        }
+    }
 
    @media (max-width: 500px){
 
@@ -492,7 +534,7 @@ footer img{
     }
 
    }
-}
+
 
 
 /* Responsividade sobre-mim */
@@ -790,82 +832,5 @@ footer img{
             margin-bottom: -4px;
         }
      }
-
-    
-
-
-
-
-
-
-
-/* #checkbox, .hamburger{
-    display: none;
-    cursor: pointer;
-} */
-
-@media (max-width: 900px){
-
-    #menu{
-        margin-top:5px;
-        /* width: 350px; */
-       
-    }
-
-   
-    .hamburger{
-        display: block;
-        z-index: 2;
-    }
-
-    input[type=checkbox]:checked ~ .ul-menu{
-        display: block;
-          
-    }
-
-    #checkbox .hamburger{
-        display:block;
-    }
-        
-    #checkbox{
-        display: none;
-    }
-
-    #menu .ul-menu .li-menu .a-menu{
-        margin: 0;
-        padding: 5px;
-        color: white;
-        font-size: 16px;
-        top: 42px;
-        left: -45px;
-   
-        }
-        
-    .ul-menu{
-        border-radius: 7px;
-        z-index:1 ;
-        margin-top: -20px;
-        width: 130px; /*180px TESTAR*/
-        height: 215px;
-        right: 0px;
-        top: 20px;
-        position: absolute;
-        background-color:rgb(54, 53, 53);
-        /* max-width: 130px; */
-        }
-
-        /* ARRUMAR ACIMA DE 900PX */
-
-        .ul-menu{
-            overflow:scroll;
-            overflow-y: hidden;
-            overflow-x: hidden;
-        }
-
-        #menu img{
-            width: 30px;
-        }
-       
-    }
 
     
