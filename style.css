@@ -453,6 +453,10 @@ footer img{
             height: calc(98vh - 550px); 
         } 
 
+        /* header{
+            height: calc(98vh - 450px);
+        } */
+
         #menu img{
             margin-top: 5px; 
         }
@@ -464,7 +468,6 @@ footer img{
     
         input[type=checkbox]:checked ~ .ul-menu{
             display: block;
-              
         }
             
         #checkbox{
@@ -833,4 +836,34 @@ footer img{
         }
      }
 
-    
+
+
+
+/* 
+     @media(min-width:501px){
+        @media(max-height: 900px){
+            header{
+               
+                height: 700px;
+            }
+         }
+     } */
+
+     /* @media (min-width: 900px ){
+
+        @media (max-width: 1200px){
+            header{
+                width: 10%;
+            }
+        }
+    }
+     */
+
+    /* @media (max-height:900px){
+        @media (max-width: 1250px){
+            header{
+                height: 300px;
+            }
+        }
+       
+    } */
