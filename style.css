@@ -435,10 +435,11 @@ footer img{
     }
 
  
-    @media (max-width:900px){
+    @media (max-width:900px){ /* 900PX*/
 
         #principal{
             margin-top: 150px;
+            /* margin-top: 25%; */
         }
 
         #principal h1{
@@ -450,7 +451,7 @@ footer img{
         }
 
         header{
-            height: calc(98vh - 550px); 
+            height: calc(98vh - 550px); /*conferir se esse header esta fazendo algo realmente*/
         } 
 
         /* header{
@@ -524,6 +525,10 @@ footer img{
     header{
         height: 260px;
     }
+
+    /* #principal{
+        margin-top: 150px;
+    } */
 
     #principal h1{
         font-size: 1.2rem;
@@ -838,32 +843,29 @@ footer img{
 
 
 
+     
 
 
-     @media(min-width:501px){
+
+
+
+      @media(min-width:501px){
         @media(max-height: 900px){
             header{
                
+                /* height: 700px;  */
+                height: 400px;
+            }
+         }
+     } 
+     
+
+     @media(min-width:900px){
+        @media(max-height: 900px){
+            header{
+               
+                /* height: 700px;  */
                 height: 700px;
             }
          }
-     }
-
-     /* @media (min-width: 900px ){
-
-        @media (max-width: 1200px){
-            header{
-                width: 10%;
-            }
-        }
-    }
-     */
-
-    /* @media (max-height:900px){
-        @media (max-width: 1250px){
-            header{
-                height: 300px;
-            }
-        }
-       
-    } */
+     } 
