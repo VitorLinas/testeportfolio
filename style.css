@@ -672,6 +672,8 @@ footer img{
     #experiência #cards .card{
         width: 300px;
         height: 420px;
+        
+        background: rgba(255, 255, 255, 0.1)
     } 
 }
 
@@ -681,6 +683,7 @@ footer img{
         width: 180px;
         height: 250px;
         font-size: 11px;
+    
 
         /* translate: none;
         transform: none;
@@ -688,6 +691,7 @@ footer img{
         animation: none; */
     }
 
+   
 
     
     #experiência #cards .card .item-card p{
@@ -853,9 +857,9 @@ footer img{
         @media(max-height: 900px){
             header{
                
-                /* height: 700px;  */
+                /* height: 700px; 
 
-                /* height: 400px; */
+                height: 400px; */
 
                 height: 300px;
             }
