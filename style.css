@@ -854,7 +854,10 @@ footer img{
             header{
                
                 /* height: 700px;  */
-                height: 400px;
+                
+                /* height: 400px; */
+
+                height: 300px;
             }
          }
      } 
@@ -863,8 +866,6 @@ footer img{
      @media(min-width:900px){
         @media(max-height: 900px){
             header{
-               
-                /* height: 700px;  */
                 height: 700px;
             }
          }
