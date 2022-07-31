@@ -28,6 +28,34 @@ function enviar(){
 
 
 
+// VanillaTilt.init(document.querySelectorAll(".card"), {
+
+    
+//     max: 25, speed:400, glare: true, "max-glare":1
+
+// });
+
+
+
+
+
+let largura = window.innerWidth;
+
+if(largura > 400){
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+
+    
+        max: 25, speed:400, glare: true, "max-glare":1
+        
+    });
+}
+
+// if(largura < 800){
+ 
+
+//     console.log(largura);
+       
+// }
 
 
 
